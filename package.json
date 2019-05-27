@@ -1,0 +1,25 @@
+{
+  "name": "ordiservice",
+  "version": "1.0.0",
+  "description": "Template Joomla with Foundation Framework for Ordi Service",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Foundation",
+    "Joomla"
+  ],
+  "author": "Anthony",
+  "license": "ISC",
+  "dependencies": {
+    "foundation-sites": "^6.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

@@ -1,0 +1,32 @@
+footer  {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: column-reverse;
+    @include breakpoint(large) {
+        flex-direction: row
+      }
+      nav{
+        text-align: center;
+        @include breakpoint(large) {
+            text-align: right;
+          }
+      }
+    .menu{
+        display: inline;
+        @include breakpoint(large) {
+            display: block;
+          }
+        a{
+            padding: 0;
+        }
+    }
+}
+#copyright {
+    margin-bottom: 0;
+    text-align: center;
+   
+    dt, dd{
+        display: inline;
+    }
+}

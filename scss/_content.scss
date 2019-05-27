@@ -1,0 +1,49 @@
+html, body{
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+main, footer {
+    margin: 0 1rem;
+    @include breakpoint(large){
+        width: 70rem;
+        justify-self: center;
+    }
+}
+.off-canvas-content{
+    display: contents;
+    @include breakpoint(large){
+        display: grid;
+    }
+}
+.callout{
+    border-radius: 1rem;
+    text-align: center;
+}
+// Contact
+.contact {
+    dl{
+        position: relative;
+    }
+    dt{
+        position: absolute;
+        font-size: 1.5rem;
+    }
+    dd{
+        margin-left: 2.5rem;
+        border-left: 3px solid $dark-gray;
+        padding-left: .5rem;
+    }
+}
+.contact-telephone {
+    line-height: 2.4;
+}
+// form 
+input.invalid,textarea.invalid {
+    border: 1px solid $form-label-color-invalid;
+}
+label.invalid{
+    color : $form-label-color-invalid;
+}
