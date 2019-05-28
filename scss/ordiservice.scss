@@ -3,7 +3,7 @@
 @import 'settings';
 
 // import foundation sass
-@import "foundation";
+@import "templates/ordiservice/node_modules/foundation-sites/scss/foundation";
 
 /* either include all foundation components…  //*/
 // @include foundation-everything;
@@ -46,7 +46,7 @@
 // @include foundation-media-object;
 @include foundation-menu;
 @include foundation-off-canvas;
-// @include foundation-orbit;
+@include foundation-orbit;
 // @include foundation-pagination;
 // @include foundation-progress-bar;
 // @include foundation-slider;

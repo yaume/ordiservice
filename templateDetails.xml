@@ -21,6 +21,7 @@
 </files>
 <positions>
     <position>Navigation</position>
+    <position>AboveMain</position>
     <position>AboveFooter</position>
     <position>Footer</position>
 </positions>
