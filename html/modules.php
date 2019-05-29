@@ -66,7 +66,7 @@ function modChrome_menu($module, &$params, &$attribs)
 	$moduleClass   = $bootstrapSize !== 0 ? ' span' . $bootstrapSize : '';
 	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'), ENT_QUOTES, 'UTF-8');
         $headerClass   = htmlspecialchars($params->get('header_class', 'page-header'), ENT_COMPAT, 'UTF-8');
-        $moduleClassSfx   = htmlspecialchars($params->get('class_sfx', 'left'), ENT_COMPAT, 'UTF-8');
+        $moduleClassSfx   = htmlspecialchars($params->get('class_sfx', 'right'), ENT_COMPAT, 'UTF-8');
 
 	if ($module->content)
 	

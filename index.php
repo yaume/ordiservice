@@ -41,6 +41,7 @@ $siteName = $config->get( 'sitename' );
             <jdoc:include type="modules" name="AboveFooter" />
         </main>
         <footer>
+            
             <jdoc:include type="modules" name="Footer" />
         </footer>
     </div>
