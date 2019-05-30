@@ -9,22 +9,14 @@
 
 // No direct access.
 defined('_JEXEC') or die;
-
-// Output as HTML5
-$this->setHtml5(true);
-
-// Get active template path from anywhere on Joomla: 
-$app    = JFactory::getApplication();
-$path   = JURI::base(true).'/templates/'.$app->getTemplate().'/';
-$config = JFactory::getConfig();
-$siteName = $config->get( 'sitename' );
+// Load template framework 
+include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="<?php echo $this->language; ?>">
 
 <head>
     <jdoc:include type="head" />
-    <link rel="stylesheet" href="templates/ordiservice/css/ordiservice.css">
 </head>
 
 <body>
