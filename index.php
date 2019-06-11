@@ -9,22 +9,14 @@
 
 // No direct access.
 defined('_JEXEC') or die;
-
-// Output as HTML5
-$this->setHtml5(true);
-
-// Get active template path from anywhere on Joomla: 
-$app    = JFactory::getApplication();
-$path   = JURI::base(true).'/templates/'.$app->getTemplate().'/';
-$config = JFactory::getConfig();
-$siteName = $config->get( 'sitename' );
+// Load template framework 
+include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="<?php echo $this->language; ?>">
 
 <head>
     <jdoc:include type="head" />
-    <link rel="stylesheet" href="templates/ordiservice/css/ordiservice.css">
 </head>
 
 <body>
@@ -36,10 +28,12 @@ $siteName = $config->get( 'sitename' );
     <div class="off-canvas-content">
         <main>
             <jdoc:include type="message" />
+            <jdoc:include type="modules" name="AboveMain" />
             <jdoc:include type="component" />
             <jdoc:include type="modules" name="AboveFooter" />
         </main>
         <footer>
+            
             <jdoc:include type="modules" name="Footer" />
         </footer>
     </div>
@@ -49,6 +43,7 @@ $siteName = $config->get( 'sitename' );
  <script  src="<?php echo $path; ?>js/foundation.util.mediaQuery.js"></script>
  <script  src="<?php echo $path; ?>js/foundation.util.triggers.js"></script>
  <script src="<?php echo $path; ?>js/foundation.offcanvas.js"></script>
+ <script src="<?php echo $path; ?>js/foundation.orbit.js"></script>
  <script>
  $(document).foundation();
  </script>
